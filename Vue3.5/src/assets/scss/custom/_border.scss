@@ -1,0 +1,74 @@
+/*============ Border Css ===========*/
+@use '../app.variables' as variables;
+@use '../mixin/common-mixin' as mixins;
+
+.border {
+  border: 1px solid variables.$gray-lighter !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+.border-top-0 {
+  border-top: 0 !important;
+}
+.border-right-0 {
+  border-right: 0 !important;
+}
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+.border-left-0 {
+  border-left: 0 !important;
+}
+
+.border-bottom-1 {
+  @include mixins.border(1px solid, variables.$border-color, bottom);
+}
+.border-left-1 {
+  @include mixins.border(1px solid, variables.$border-color, left);
+}
+.border-bottom-2 {
+  @include mixins.border(2px solid, variables.$border-color, bottom);
+}
+.border-bottom-light-1 {
+  @include mixins.border(1px solid, variables.$gray-lighter, bottom);
+}
+.border-bottom-light-2 {
+  @include mixins.border(2px solid, variables.$gray-lighter, bottom);
+}
+.border-tb-1 {
+  @include mixins.border(1px solid, variables.$gray-lighter, bottom top);
+}
+.border-top-1 {
+  @include mixins.border(1px solid, variables.$gray-lighter, top);
+}
+.border-white {
+  border: 1px solid #fff !important;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.border-primary {
+  border: 1px solid variables.$primary;
+}
+.border-info {
+  border: 1px solid variables.$info;
+}
+.border-rad-sm {
+  border-radius: 6px;
+}
+.border-blue {
+  @include mixins.border(3px solid, variables.$primary, left);
+}
+.border-purple {
+  @include mixins.border(3px solid, #582ad7, left);
+}
+.border-pink {
+  @include mixins.border(3px solid, variables.$pink, left);
+}
+.border-warning {
+  @include mixins.border(3px solid, variables.$warning, left);
+}

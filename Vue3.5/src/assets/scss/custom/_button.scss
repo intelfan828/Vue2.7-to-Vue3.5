@@ -1,0 +1,73 @@
+/*============= Buttons Scss =============*/
+@use '../app.variables' as variables;
+
+.btn-gradient-primary {
+  background: variables.$btn-gradient-primary;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-gradient-pink {
+  background: variables.$btn-gradient-pink;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-gradient-success {
+  background: variables.$btn-gradient-success;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-gradient-warning {
+  background: variables.$btn-gradient-warning;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-gradient-purple {
+  background: variables.$btn-gradient-purple;
+  * {
+    color: variables.$light;
+  }
+}
+// Simple Button Style
+.btn-primary {
+  background-color: variables.$btn-primary !important;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-success {
+  background-color: variables.$btn-success !important;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-info {
+  background-color: variables.$btn-info !important;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-warning {
+  background-color: variables.$btn-warning !important;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-danger {
+  background-color: variables.$btn-danger !important;
+  * {
+    color: variables.$light;
+  }
+}
+.btn-icon {
+  font-weight: variables.$btn-font-weight;
+  border-radius: variables.$btn-border-radius;
+  i {
+    font-size: variables.$btn-icon-font-size;
+    margin-right: 0.625rem; //10px;
+    font-weight: variables.$btn-font-weight;
+  }
+}

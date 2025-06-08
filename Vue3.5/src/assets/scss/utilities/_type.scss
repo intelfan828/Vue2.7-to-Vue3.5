@@ -1,0 +1,99 @@
+/*=========== All site Typography Setting Here ===========*/
+@use '../app.variables' as variables;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-family: inherit;
+  font-weight: variables.$font-weight-semi-bold;
+  line-height: 1.2;
+  color: inherit;
+}
+h1,
+.h1 {
+  font-size: variables.$h1-font-size;
+}
+h2,
+.h2 {
+  font-size: variables.$h2-font-size;
+}
+h3,
+.h3 {
+  font-size: variables.$h3-font-size;
+}
+h4,
+.h4 {
+  font-size: variables.$h4-font-size;
+}
+h5,
+.h5 {
+  font-size: variables.$h5-font-size;
+}
+h6,
+.h6 {
+  font-size: variables.$h6-font-size;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+//--- Font size ---//
+.font-lg {
+  font-size: variables.$font-size-lg;
+}
+.font-sm {
+  font-size: variables.$font-size-sm;
+}
+.font-md {
+  font-size: (variables.$font-size-sm + 0.25rem);
+}
+.font-2x {
+  font-size: 2rem;
+}
+.font-3x {
+  font-size: 3rem;
+}
+.font-4x {
+  font-size: 4rem;
+}
+.font-5x {
+  font-size: 5em;
+}
+.font-xl {
+  font-size: 42px;
+}
+.fs-12 {
+  font-size: 0.75rem;
+}
+.fs-14 {
+  font-size: 0.875rem;
+}
+.fs-16 {
+  font-size: 1rem;
+}
+// Font Weight
+.fw-bold {
+  font-weight: variables.$font-weight-bold !important;
+}
+.fw-semi-bold {
+  font-weight: variables.$font-weight-semi-bold !important;
+}
+.fw-normal {
+  font-weight: variables.$font-weight-normal !important;
+}
+.fw-light {
+  font-weight: variables.$font-weight-light !important;
+}
+
+/*=================== Responsive ====================*/

@@ -1,0 +1,64 @@
+/*======== Module Scss ========*/
+@use '../app.variables' as variables;
+@use '../mixin/common-mixin' as mixins;
+
+//chat
+.chat-box-main {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-bottom: 0.9375rem;
+  }
+}
+.chat-body {
+  padding: 1.875rem; //30px;
+  > div {
+    margin-bottom: 0.9375rem;
+  }
+  .chat-block {
+    display: flex;
+  }
+  .chat-bubble {
+    max-width: 600px;
+    padding: 0.625rem; //10px;
+    box-shadow: variables.$card-shadow;
+    &.even {
+      border-radius: 20px 20px 20px 0;
+    }
+    &.odd {
+      border-radius: 20px 20px 0px 20px;
+      span {
+        color: variables.$light;
+      }
+    }
+  }
+}
+.border-rad-0.card {
+  @include mixins.border(1px solid, variables.$input-border-color, right);
+}
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+.h-vh-100 {
+  height: 100vh;
+}
+/*======== Responsive =========*/
+@media (max-width: 599px) {
+  .chat-main-wrapper {
+    display: none !important;
+  }
+  .mobile-chat {
+    .chat-sidebar-wrapper {
+      display: none;
+    }
+    .chat-main-wrapper {
+      display: block !important;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+/*======== Main Scss ========*/
+@use '../app.variables' as variables;
+
+.app-card {
+  background-color: variables.$card-bg;
+  border-radius: variables.$card-border-radius;
+  margin-bottom: variables.$card-margin-bottom;
+  box-shadow: variables.$card-shadow;
+  transition: all 0.4s ease-in-out 0s;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  .app-card-title {
+    position: relative;
+    padding: variables.$card-title-spacing;
+    border-bottom: variables.$card-title-border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3,
+    .app-title {
+      font-size: variables.$card-title-font-size;
+      color: variables.$card-title-color;
+      text-transform: variables.$card-title-transform;
+      font-weight: variables.$card-title-weight;
+      margin: 0;
+    }
+  }
+  .app-contextual-link {
+    .v-btn {
+      .v-icon {
+        color: variables.$contextual-link-color;
+      }
+    }
+  }
+  .app-card-content {
+    padding: variables.$card-spacing;
+  }
+  .app-full-content {
+    padding: 0;
+  }
+  .app-footer {
+    padding: variables.$card-footer-spacing;
+    border-top: variables.$card-border;
+    .v-btn {
+      margin: 0;
+    }
+  }
+  &:hover {
+    box-shadow: variables.$card-hover-shadow;
+  }
+}
+
+.app-card-action {
+  background-color: variables.$base-light !important;
+  overflow: hidden;
+  .v-list-item {
+    height: 40px;
+    font-size: 0.875rem;
+    margin: 0.3125rem;
+    background-color: variables.$light;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.02);
+    span {
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+      background-color: variables.$light !important;
+      span {
+        color: variables.$primary !important;
+      }
+    }
+  }
+}
+
+.content {
+  overflow-y: hidden;
+}
+.dash-title {
+  margin: 0.9375rem 0; //15px;
+  span {
+    color: variables.$d-title-color;
+    font-size: variables.$d-title-font-size;
+    text-transform: variables.$d-title-transform;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  a {
+    vertical-align: 1px;
+    .v-icon {
+      font-size: variables.$d-title-font-size;
+      margin-left: 5px;
+    }
+  }
+}
+.dash-card-wrap,
+.card {
+  transition: all 0.4s ease-in-out 0s;
+  &:hover {
+    box-shadow: variables.$card-hover-shadow;
+  }
+}
+#nprogress .bar {
+  background: variables.$danger !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: variables.$danger !important;
+  border-left-color: variables.$danger !important;
+}

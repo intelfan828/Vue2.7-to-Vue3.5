@@ -1,0 +1,183 @@
+/* Theme Variables */
+:root {
+  --dark-bg-color: #333;
+  --dark-border-color: #444;
+  --dark-bg: #24293a;
+  --dark-bg-container: #333;
+  --light-bg: #ffffff;
+  --light-bg-secondary: #f5f5f5;
+  --light-border-color: #e0e0e0;
+  --light: #fff;
+  --gray-light: #bbb;
+  --danger: #f44336;
+  --body-color: #ccc;
+  --primary: #5d92f4;
+  --base: #f1f1f1;
+}
+
+/* Light Theme Styles */
+.v-theme--light {
+  background-color: var(--light-bg);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.v-theme--light .v-card,
+.v-theme--light .v-list,
+.v-theme--light .v-navigation-drawer,
+.v-theme--light .v-sheet,
+.v-theme--light .app-card,
+.v-theme--light .dash-card,
+.v-theme--light .navbar-default,
+.v-theme--light .inner-toolbar,
+.v-theme--light .v-window-item {
+  background-color: var(--light-bg) !important;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.v-theme--light .v-toolbar,
+.v-theme--light .v-tabs > .v-tabs-bar,
+.v-theme--light .v-expansion-panel {
+  background-color: var(--light-bg) !important;
+  border-color: var(--light-border-color);
+}
+
+.v-theme--light .v-list-item:hover {
+  background-color: var(--light-bg-secondary);
+}
+
+/* Dark Theme Styles */
+.v-theme--dark {
+  background-color: var(--dark-bg) !important;
+  color: var(--light) !important;
+}
+
+.v-theme--dark .v-card,
+.v-theme--dark .v-list,
+.v-theme--dark .v-navigation-drawer,
+.v-theme--dark .v-sheet,
+.v-theme--dark .app-card,
+.v-theme--dark .dash-card,
+.v-theme--dark .navbar-default,
+.v-theme--dark .dash-card-wrap,
+.v-theme--dark .dash-card-light,
+.v-theme--dark .comp-full-calendar,
+.v-theme--dark .session-block,
+.v-theme--dark .card-base,
+.v-theme--dark .inbox-listing ul > li:nth-child(2n),
+.v-theme--dark .fixed-pricing,
+.v-theme--dark .dropzone,
+.v-theme--dark .card,
+.v-theme--dark .inner-toolbar,
+.v-theme--dark .v-window-item,
+.v-theme--dark .v-step,
+.v-theme--dark .v-expansion-panel-content__wrap,
+.v-theme--dark .v-tabs > .v-tabs-bar {
+  background-color: var(--dark-bg) !important;
+  color: var(--light) !important;
+  border-color: var(--dark-border-color);
+}
+
+.v-theme--dark .v-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Common Theme Styles */
+.theme-color .v-list-item.active-theme {
+  background-color: rgba(var(--v-theme-primary), 0.1);
+}
+
+.theme-color .v-list-item:hover {
+  opacity: 0.85;
+}
+
+/* Theme Color Indicators */
+.bg-primary { background-color: var(--v-theme-primary) !important; }
+.bg-secondary { background-color: var(--v-theme-secondary) !important; }
+.bg-success { background-color: var(--v-theme-success) !important; }
+.bg-info { background-color: var(--v-theme-info) !important; }
+.bg-warning { background-color: var(--v-theme-warning) !important; }
+.bg-error { background-color: var(--v-theme-error) !important; }
+.bg-accent { background-color: var(--v-theme-accent) !important; }
+
+/* Fix for specific components */
+.v-overlay__content {
+  background-color: inherit;
+}
+
+.v-menu .v-overlay__content {
+  background-color: rgb(var(--v-theme-surface));
+}
+
+/* Dark Theme */
+.v-theme--dark {
+  color: var(--dark-bg-color) !important;
+  border-color: var(--dark-border-color) !important;
+}
+
+.v-theme--dark .recent-user-wrap .v-list-item .v-list-item__subtitle a {
+  color: var(--dark-bg-color) !important;
+}
+
+.v-theme--dark .grey--text,
+.v-theme--dark .black--text {
+  color: var(--dark-bg-color) !important;
+}
+
+.v-theme--dark p {
+  color: var(--gray-light);
+}
+
+.v-theme--dark span {
+  color: var(--gray-light);
+}
+
+.v-theme--dark .top-news-wrap .slider-btn-wrap .slick-arrow:before {
+  color: var(--light) !important;
+}
+
+.v-theme--dark .app-boxed-layout .app-container .v-main .app-content {
+  background-color: transparent !important;
+}
+
+.v-theme--dark .v-main__wrap {
+  background: #24293a;
+}
+
+.v-theme--dark .grayish-blue,
+.v-theme--dark .shop-wrapper .sidebar-filter-wrap .ais-RefinementList-count {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.v-theme--dark .Vuely-sidebar .v-navigation-drawer__border {
+  background-color: transparent !important;
+}
+
+.v-theme--dark .app-card {
+  box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
+}
+
+.v-theme--dark .v-text-field > .v-input__control > .v-input__slot::before,
+.v-theme--dark .v-input.search-bar.v-text-field {
+  border-color: #535869 !important;
+}
+
+.v-theme--dark .app-card,
+.v-theme--dark .dash-card,
+.v-theme--dark .navbar-default,
+.v-theme--dark .dash-card-wrap,
+.v-theme--dark .dash-card-light,
+.v-theme--dark .comp-full-calendar,
+.v-theme--dark .session-block,
+.v-theme--dark .card-base,
+.v-theme--dark .inbox-listing ul > li:nth-child(2n),
+.v-theme--dark .fixed-pricing,
+.v-theme--dark .dropzone,
+.v-theme--dark .card,
+.v-theme--dark .inner-toolbar,
+.v-theme--dark .v-window-item,
+.v-theme--dark .v-step,
+.v-theme--dark .v-expansion-panel-content__wrap,
+.v-theme--dark .v-tabs > .v-tabs-bar {
+  background-color: var(--dark-bg) !important;
+  border-color: var(--dark-border-color);
+} 

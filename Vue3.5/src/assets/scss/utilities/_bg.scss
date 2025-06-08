@@ -1,0 +1,110 @@
+/*=========== Background Utilities ==========*/
+@use '../app.variables' as variables;
+@use '../mixin/bg' as mixins;
+
+.gradient-primary {
+  background: variables.$light-primary;
+  * {
+    color: variables.$light;
+  }
+}
+
+.gradient-success {
+  background: variables.$light-success;
+  * {
+    color: variables.$light;
+  }
+}
+
+.gradient-pink {
+  background: variables.$light-pink;
+  * {
+    color: variables.$light;
+  }
+}
+
+.gradient-warning {
+  background: variables.$light-warning;
+  * {
+    color: variables.$light;
+  }
+}
+
+.gradient-purple {
+  background: variables.$light-purple;
+  * {
+    color: variables.$light;
+  }
+}
+
+.facebook-bg {
+  background-color: #4766ce;
+}
+
+.google-bg {
+  background-color: #cb2929;
+}
+
+.instagram-bg {
+  background-color: #ff37cf;
+}
+
+.linkedin-bg {
+  background-color: #247897;
+}
+
+.twitter-bg {
+  background-color: #3cb1f1;
+}
+
+.github-bg {
+  background-color: #6f574e;
+}
+
+.facebook {
+  .v-icon,
+  i {
+    color: #3b5998 !important;
+  }
+}
+
+.google {
+  .v-icon,
+  i {
+    color: #d82218 !important;
+  }
+}
+
+.twitter {
+  .v-icon,
+  i {
+    color: #1fa2fa !important;
+  }
+}
+
+.linkedin {
+  .v-icon,
+  i {
+    color: #4875b4 !important;
+  }
+}
+
+.instagram {
+  .v-icon,
+  i {
+    color: #f45da0 !important;
+  }
+}
+
+.grayish-blue {
+  background-color: variables.$gray-dark !important;
+}
+
+.aqua-bg {
+  background-color: variables.$aqua-bg;
+}
+
+// Simple Brand Background Color
+@each $color, $value in variables.$theme-colors {
+  @include mixins.bg-variant('.bg-#{$color}', $value);
+}

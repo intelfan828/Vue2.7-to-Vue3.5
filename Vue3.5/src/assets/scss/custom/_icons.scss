@@ -1,0 +1,30 @@
+/*=========== Icons Scss =============*/
+@use '../app.variables' as variables;
+@use '../mixin/common-mixin' as mixins;
+
+.icon-box {
+  div {
+    color: variables.$gray;
+    padding: 0.8em 0;
+    position: relative;
+    &:hover span i {
+      font-size: 2rem;
+      color: variables.$primary;
+      margin-top: -5px;
+    }
+    &:hover span {
+      color: variables.$primary;
+    }
+  }
+  span,
+  .icon-title {
+    font-size: 1rem; //16px;
+    margin-left: 2.188rem; //35px;
+  }
+  span i {
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    top: 17px;
+    left: 15px;
+  }
+}
